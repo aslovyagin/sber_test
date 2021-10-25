@@ -1,0 +1,10 @@
+table1: id | name
+table2: id | bank_card
+
+need: name+bank_card
+
+query:
+SELECT table1.name, table2.bank_card
+FROM table1
+INNER JOIN table2
+USING(id)
